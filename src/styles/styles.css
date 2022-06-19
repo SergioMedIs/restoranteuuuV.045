@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+}
+* body {
+  background-image: url("../images/fondo.png");
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  height: 50px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color:rgba(33, 87, 122, 0.425) ;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.header_titletext {
+  cursor: default;
+}
+
+.header_menu {
+  padding-left: 5px;
+}
+
+.cartDiv {
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 50px;
+  padding-right: 5px;
+}
+
+.carDiv_count {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 100%;
+  cursor: default;
+  background-color: red;
+}
+
+.carDiv_list {
+  display: none;
+  min-width: 100px;
+  right: 0;
+  top: 50px;
+  position: absolute;
+  z-index: 999;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  background-color: rgba(3, 3, 3, 0.9);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+.carDiv_list ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.carDiv_list img {
+  max-width: 100px;
+}
+
+
+.container .content {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  height: auto;
+
+  background-color: rgba(17, 17, 17, 0.575);
+}
+.container .content .title {
+  height: 20vh;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.container .content .listplatillos {
+  display: flex;
+  flex-flow: row;
+  min-width: 100vw;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .content .platillos {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  width: 200px;
+  min-height: 200px;
+  list-style: none;
+  background-color: rgba(51, 51, 51, 0.548);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px #000;
+  transition: 0.4s;
+}
+
+ .platillos .platillos_image {
+  margin-top: -50px;
+  max-width: 250px;
+  max-height: 150px;
+  border-radius: 15px;
+}
+.platillos .platillos_nombre .container .content .platillos .platillo_precio {
+  color: white;
+}
+.platillos .platillos_nombre {
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  font-size: 21px;
+}
+.platillos .platillos_precio {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+ .footer {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.platillos_btnAdd {
+  cursor: pointer;
+  color: rgb(73, 73, 73);
+  border: 0;
+  background-color: #dfdfdf;
+  text-shadow: 1px 0px #111;
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  font-size: 18px;
+  border-radius: 2px;
+  padding: 0 10px 0 10px;
+}
+
+.platillos_btnDel {
+  cursor: pointer;
+  color: white;
+  border: 0;
+  background-color: red;
+  text-shadow: 1px 0px #111;
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  font-size: 1.4rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 0 10px 0 10px;
+  margin-right: 10px;
+}
+
+.platillos_btnClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  color: white;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+
+.carDiv_btnCart {
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../images/cart.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.menu_button {
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../images/menu.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 20px;
+  height: 20px;
+}
+
+
+.platillos:hover {
+  transform: translateY(20px);
+}
