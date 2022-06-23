@@ -5,6 +5,9 @@
 }
 * body {
   background-image: url("../images/fondo.png");
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
 }
 
 .header {
@@ -28,12 +31,11 @@
   padding-left: 5px;
 }
 
-.cartDiv {
-  display: flex;
-  flex-flow: row;
+.carDiv {
+  justify-content: right;
+  display: grid;
   align-content: center;
   align-items: center;
-  justify-content: space-between;
   min-width: 50px;
   padding-right: 5px;
 }
@@ -44,7 +46,7 @@
   text-align: center;
   border-radius: 100%;
   cursor: default;
-  background-color: red;
+  background-color: rgb(223, 223, 223);
 }
 
 .carDiv_list {
@@ -87,13 +89,16 @@
 }
 .container .content .title {
   height: 20vh;
-  font-family: "Montserrat", sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   color: white;
 }
-.container .content .listplatillos {
+ .listplatillos {
+  color: white;
+  margin: 15px;
+  margin-top: 550px;
   display: flex;
   flex-flow: row;
-  min-width: 100vw;
+  min-width: 100px;
   align-content: center;
   align-items: center;
   justify-content: space-around;
@@ -121,7 +126,7 @@
   max-height: 150px;
   border-radius: 15px;
 }
-.platillos .platillos_nombre .container .content .platillos .platillo_precio {
+.platillos .platillos_nombre .platillos .platillo_precio {
   color: white;
 }
 .platillos .platillos_nombre {
@@ -176,7 +181,7 @@
   font-size: 1.2rem;
 }
 
-.carDiv_btnCart {
+.carDiv_btnCar {
   cursor: pointer;
   background-color: transparent;
   background-image: url("../images/cart.png");
@@ -199,7 +204,14 @@
   width: 20px;
   height: 20px;
 }
-
+.text-w{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.inicio{
+  font-family: Arial, Helvetica, sans-serif, italic;
+}
 
 .platillos:hover {
   transform: translateY(20px);

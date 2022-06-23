@@ -3,19 +3,19 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, } from "react-router-dom";
-import {Inicio} from './pages/Inicio';
+/* import {Inicio} from './pages/Inicio'; */
 import {MenuRapido} from './pages/MenuRapido';
-import {Envios} from './pages/Envios';
+/* import {Envios} from './pages/Envios'; */
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
 
     <App />
-    <Inicio/>
+{/*     <Inicio/> */}
     <MenuRapido/>
-    <Envios/>
-
+{/*     <Envios/>
+ */}
    
     </BrowserRouter>
 

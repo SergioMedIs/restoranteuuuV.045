@@ -6,7 +6,7 @@ import Brocheta from "../images/brocheta.png";
 import Guisado from "../images/Guisado.png";
 import Pan from "../images/pan.png";
 import Sandwich from "../images/sandwich.png";
-import "../styles/styles.css"
+
 
 export function MenuRapido (){
 
@@ -23,13 +23,14 @@ export function MenuRapido (){
 return(
 <>
 
-<div className="title">
-            <h1>MENU Rapido</h1>
-          </div>
 
-          <div className="cartDiv">
+
+          <div className="carDiv">
             <Car car={car} setCar={setCar} />
-          </div> 
+          </div>  
+          <div className="text-w">
+            <h3 className="inicio">Bienvenido a HammerHead</h3>
+          </div>
 
           <div className="listplatillos">
             {platillos.map((platillo) => (

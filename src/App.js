@@ -3,9 +3,9 @@ import Platillo from "./components/Platillo";
 import Car from "./components/Car";
 import "./styles/styles.css";
 import { Route, Link, Routes, BrowserRouter } from "react-router-dom";
-import {Inicio } from './pages/Inicio';
+
 import {MenuRapido} from './pages/MenuRapido';
-import {Envios} from './pages/Envios';
+
 /* import Brocheta from "./images/brocheta.png";
 import Guisado from "./images/Guisado.png";
 import Pan from "./images/pan.png";
@@ -32,17 +32,15 @@ function App() {
           </div>
 
 
-  {/*         <div className="cartDiv">
-            <Car car={car} setCar={setCar} />
-          </div> */}
+
         </section>
 
-
+{/* 
         <Routes>
         <Route path="/Envio" element={<Envios/>} />
         <Route path="/" element={<Inicio/>} />
         <Route path="/MenuRapido" element={<MenuRapido/>} />
-        </Routes>
+        </Routes> */}
      
         <section className="content">
 
