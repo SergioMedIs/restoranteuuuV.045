@@ -8,6 +8,7 @@ import Pan from "../images/pan.png";
 import Sandwich from "../images/sandwich.png";
 
 
+
 export function MenuRapido (){
 
     const [platillos, setPlatillos] = useState([
@@ -30,7 +31,11 @@ return(
           </div>  
           <div className="text-w">
             <h3 className="inicio">Bienvenido a HammerHead</h3>
+            
+            <h4>El hambre llama, nosotros atendemos.  Desayunos, comidas, cenas,a todo momento a TODA HAMBRE</h4>
+            
           </div>
+          
 
           <div className="listplatillos">
             {platillos.map((platillo) => (

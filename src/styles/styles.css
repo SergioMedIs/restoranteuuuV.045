@@ -5,9 +5,10 @@
 }
 * body {
   background-image: url("../images/fondo.png");
-  display: flex;
+
   flex-direction: column-reverse;
   align-content: center;
+ 
 }
 
 .header {
@@ -211,7 +212,20 @@
 }
 .inicio{
   font-family: Arial, Helvetica, sans-serif, italic;
+  font-size: 35px;
+
+
 }
+.reserved{
+
+
+
+
+}
+.tittle_reserved h3{
+color: white;
+}
+
 
 .platillos:hover {
   transform: translateY(20px);
