@@ -55,6 +55,7 @@ function App() {
           <input type="text" placeholder="Nombre"/>
           <input type="number" placeholder="Mesa" name="" id="" />
           <input type="date" name="" id="fecha" />
+          <button id="Save-app">Guardar</button>
 
         
  

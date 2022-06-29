@@ -7,6 +7,16 @@ import { BrowserRouter, } from "react-router-dom";
 import {MenuRapido} from './pages/MenuRapido';
 /* import {Envios} from './pages/Envios'; */
 
+
+import {
+  onGetTasks,
+  saveTask,
+  deleteTask,
+  getTask,
+  updateTask,
+  getTasks,
+} from "./firebase.js";
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -28,3 +38,5 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
